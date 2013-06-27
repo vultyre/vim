@@ -1,0 +1,11 @@
+#!/bin/bash
+#.vim/install
+#
+#A script to install the vim submodule configuration and set symlinks
+
+#Configure the symlinks
+ln -s ~/.vim/vimrc ~/.vimrc
+
+#Download the submodules
+git submodule init
+git submodule update
